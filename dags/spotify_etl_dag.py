@@ -9,8 +9,7 @@ PROJECT_ROOT = "/workspaces/spotify-etl-pipeline"
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-# 2. Explicitly import. If these fail, check if the function names 
-# in extract.py and transform_load.py match exactly!
+
 from scripts.extract import run_extraction
 from scripts.transform_load import run_transform_load
 
